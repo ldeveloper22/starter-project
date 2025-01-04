@@ -5,6 +5,22 @@ You will use this folder to add the schema of the *Articles* you want to upload 
 ## DB Schema
 **TODO: ADD YOUR DB SCHEMA (SCHEMA FOR "ARTICLES" AND ANY OTHER SCHEMAS) HERE**
 
+# DB Schema for Articles Collection
+
+## **Collection: articles**
+| Field        | Type     | Description                                           |
+| -------------| -------- | ----------------------------------------------------- |
+| `title`      | String   | The title of the article.                             |
+| `content`    | String   | The full body of the article.                         |
+| `author`     | String   | Name of the journalist who wrote the article.         |
+| `publishedAt`| Timestamp| Date and time the article was published.              |
+| `category`   | String   | Category of the article (e.g., technology, sports).   |
+| `thumbnailURL`| String  | Reference to the thumbnail image in Cloud Storage.    |
+| `tags`       | Array    | Keywords to categorize and search the article.        |
+| `summary`    | String   | A brief summary of the article.                       |
+| `status`     | String   | Status of the article (`published`, `draft`, etc.).   |
+
+
 ## Getting Started
 Before starting to work on the backend, you must have a Firebase project with the [Firebase Firestore](https://firebase.google.com/docs/firestore), [Firebase Cloud Storage](https://firebase.google.com/docs/storage) and [Firebase Local Emulator Suite](https://firebase.google.com/docs/emulator-suite) technologies enabled.
 To do this, create a project but enable only Firebase Cloud Storage, Firebase Firestore, and Firebase Local Emulator Suite technologies.
